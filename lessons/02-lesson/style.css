@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+
+span {
+  background-color: #ff0000;
+}
+
+main {
+  background-color: #ff0000;
+}
+
+.my__main__block {
+  background-color: #00ff04;
+}
+
+.my__text {
+  font-size: 48px;
+  font-style: italic;
+}
+
+.my__text[aria-disabled="true"] {
+  opacity: 0.25;
+}
+
+[dawdawdwadaw] {
+  color: white;
+}
+
+#my__main__block {
+  font-weight: 900;
+  background-color: #ff00e1;
+}
+
+
+.product__card {
+  border: #8b8b8b 1px solid;
+  background-color: #ebebeb;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.product__card__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.product__card__content {
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.product__card__buy__btn {
+  background-color: #ffb31a;
+  border: 0;
+  outline: 0;
+  border-radius: 6px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background-color .3s, scale .5s;
+  /* transition: all .33s; */
+}
+
+.product__card__buy__btn:hover {
+  background-color: #fcc352;
+}
+
+.product__card__buy__btn:active {
+  scale: .95;
+}
+
+
+/* Margin and padding example */
+
+.MP_TEST {
+  background-color: #6d60f9;
+  margin: 50px;
+  padding: 50px;
+  border: 25px #000 solid;
+}
+
+/* box__sizing__test */
+
+.box__sizing__test {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: #000 solid 5px;
+}
