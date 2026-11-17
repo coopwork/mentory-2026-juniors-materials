@@ -1,0 +1,30 @@
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.btn {
+  padding: 5px 10px;
+  background-color: rgba(var(--main-color));
+  color: white;
+  border-radius: var(--rounded);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgba(var(--main-color), .5);
+}
+
+.btn.outline {
+  background-color: transparent;
+  border: 1px solid rgba(var(--main-color));
+  color: rgba(var(--main-color));
+}
+
+.btn.outline:hover {
+  background-color: rgba(var(--main-color));
+  color: white;
+}

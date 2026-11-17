@@ -1,0 +1,96 @@
+.main_grid {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); */
+  grid-template-rows: repeat(2, 40px);
+  gap: 1px;
+}
+
+.card {
+  border: 2px solid black;
+}
+
+.card:nth-child(odd) {
+  background-color: rgb(255, 170, 11);
+}
+
+.card:nth-child(even) {
+  background-color: rgb(80, 190, 189);
+}
+
+.card:first-child {
+  background-color: green;
+  grid-column: span 2;
+}
+
+.card:last-child {
+  background-color: yellow;
+}
+
+.main_grid_2 {
+  margin: 20px 0;
+  display: grid;
+
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+
+  grid-template-areas:
+    "h h"
+    "s c"
+    "f f";
+  gap: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .main_grid_2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 100px 1fr 50px;
+    grid-template-areas:
+      "h"
+      "s"
+      "c"
+      "f";
+    gap: 2px;
+  }
+}
+
+.header {
+  background-color: green;
+  grid-area: h;
+}
+
+.sidebar {
+  background-color: rgb(246, 225, 34);
+  grid-area: s;
+}
+
+.content {
+  background-color: rgb(117, 228, 196);
+  grid-area: c;
+}
+
+.footer {
+  background-color: rgb(140, 34, 246);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: f;
+  border: 5px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-color: rgb(246, 34, 158);
+    justify-content: end;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    background-color: rgb(246, 34, 34);
+    justify-content: start;
+    border: none;
+  }
+}
